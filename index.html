@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- YouTube Background Music -->
+    <div id="music-player-container" style="display: none;">
+        <iframe id="yt-player"
+            src="https://www.youtube.com/embed/LUgpPmj6nR8?autoplay=0&loop=1&playlist=LUgpPmj6nR8&mute=1"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="display:none;">
+        </iframe>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <button class="music-toggle" onclick="toggleSound()" title="Toggle Music">🎵 Play Music</button>
+            <div class="nav-dots">
+                <span class="dot active" onclick="goToPage(0)" title="Welcome"></span>
+                <span class="dot" onclick="goToPage(1)" title="Memories"></span>
+                <span class="dot" onclick="goToPage(2)" title="Love Letter"></span>
+                <span class="dot" onclick="goToPage(3)" title="Motivation"></span>
+                <span class="dot" onclick="goToPage(4)" title="Surprise"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pages Container -->
+    <div class="pages-container">
+        <!-- PAGE 1: WELCOME -->
+        <div class="page active" id="page-0">
+            <div class="ocean-background">
+                <svg class="wave wave1" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,50 Q300,0 600,50 T1200,50 L1200,120 L0,120 Z" fill="rgba(255,182,193,0.3)"></path>
+                </svg>
+                <svg class="wave wave2" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,60 Q300,10 600,60 T1200,60 L1200,120 L0,120 Z" fill="rgba(255,127,127,0.2)"></path>
+                </svg>
+                <svg class="wave wave3" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,70 Q300,20 600,70 T1200,70 L1200,120 L0,120 Z" fill="rgba(135,206,235,0.1)"></path>
+                </svg>
+            </div>
+
+            <!-- Floating Hearts -->
+            <div class="floating-hearts">
+                <div class="heart">💕</div>
+                <div class="heart">💖</div>
+                <div class="heart">💗</div>
+                <div class="heart">💝</div>
+                <div class="heart">💞</div>
+            </div>
+
+            <div class="page-content welcome-content">
+                <h1 class="welcome-title" id="welcome-title">Happy Birthday Antigravity 💕</h1>
+                <p class="welcome-subtitle">A Special Day For You</p>
+                <button class="btn btn-primary glow-btn" onclick="goToPage(1)">
+                    <span>Enter My Love</span>
+                    <span class="btn-glow"></span>
+                </button>
+                <p class="welcome-hint">Swipe • Arrow Keys • Click Dots</p>
+            </div>
+        </div>
+
+        <!-- PAGE 2: MEMORIES -->
+        <div class="page" id="page-1">
+            <div class="page-content memories-content">
+                <h2 class="page-title">Why You Are Special 🌟</h2>
+                <p class="page-subtitle">5 Reasons I Love You</p>
+
+                <div class="reasons-grid">
+                    <div class="reason-card">
+                        <div class="reason-icon">✨</div>
+                        <h3>Your Beautiful Smile</h3>
+                        <p>Your smile lights up my world and makes every moment brighter. It's the first thing I think of when I wake up and the last before I sleep.</p>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-icon">💫</div>
+                        <h3>Your Kind Heart</h3>
+                        <p>Your compassion and kindness inspire me every day. You care for others so deeply, and that's what makes you truly beautiful.</p>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-icon">🌈</div>
+                        <h3>Your Strength</h3>
+                        <p>Even in difficult times, you never give up. Your resilience and courage remind me to be brave when facing challenges.</p>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-icon">🎵</div>
+                        <h3>Your Laughter</h3>
+                        <p>Your laugh is like music to my ears. It fills our moments with joy and reminds me not to take life too seriously.</p>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-icon">💖</div>
+                        <h3>Your Love</h3>
+                        <p>Most importantly, your love. It's pure, genuine, and unconditional. You make me feel like the luckiest person alive every single day.</p>
+                    </div>
+                </div>
+
+                <div class="page-nav">
+                    <button class="btn btn-secondary" onclick="goToPage(0)">← Back</button>
+                    <button class="btn btn-primary" onclick="goToPage(2)">Next →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 3: LOVE LETTER -->
+        <div class="page" id="page-2">
+            <div class="page-content love-letter-content">
+                <div class="letter-container">
+                    <div class="letter-header">💌</div>
+                    <div class="letter-content">
+                        <h2 class="letter-title">My Love Letter to You</h2>
+                        <p class="letter-text" id="love-letter-text"></p>
+                    </div>
+                    <div class="letter-footer">
+                        <p>Yours Forever,</p>
+                        <p class="signature">💕</p>
+                    </div>
+                </div>
+
+                <div class="page-nav">
+                    <button class="btn btn-secondary" onclick="goToPage(1)">← Back</button>
+                    <button class="btn btn-primary" onclick="goToPage(3)">Next →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 4: MOTIVATION -->
+        <div class="page" id="page-3">
+            <div class="ocean-background">
+                <svg class="wave wave1" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,50 Q300,0 600,50 T1200,50 L1200,120 L0,120 Z" fill="rgba(135,206,235,0.3)"></path>
+                </svg>
+                <svg class="wave wave2" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,60 Q300,10 600,60 T1200,60 L1200,120 L0,120 Z" fill="rgba(74,144,226,0.2)"></path>
+                </svg>
+                <svg class="wave wave3" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,70 Q300,20 600,70 T1200,70 L1200,120 L0,120 Z" fill="rgba(255,182,193,0.1)"></path>
+                </svg>
+            </div>
+
+            <div class="page-content motivation-content">
+                <h2 class="page-title">Always Remember 🌊</h2>
+
+                <div class="motivation-messages">
+                    <div class="motivation-card fade-in-up" style="animation-delay: 0.3s;">
+                        <div class="motivation-icon">💕</div>
+                        <p class="motivation-text">I am always with you</p>
+                    </div>
+
+                    <div class="motivation-card fade-in-up" style="animation-delay: 0.6s;">
+                        <div class="motivation-icon">🌍</div>
+                        <p class="motivation-text">No matter where you are</p>
+                    </div>
+
+                    <div class="motivation-card fade-in-up" style="animation-delay: 0.9s;">
+                        <div class="motivation-icon">✨</div>
+                        <p class="motivation-text">You are never alone</p>
+                    </div>
+                </div>
+
+                <div class="motivation-message">
+                    <p>In your heart, in your thoughts, in every breath you take—I am there. Forever and always. 💖</p>
+                </div>
+
+                <div class="page-nav">
+                    <button class="btn btn-secondary" onclick="goToPage(2)">← Back</button>
+                    <button class="btn btn-primary" onclick="goToPage(4)">Next →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 5: SURPRISE -->
+        <div class="page" id="page-4">
+            <div class="page-content surprise-content">
+                <h2 class="page-title">🎁 Final Surprise 🎁</h2>
+
+                <div class="surprise-container">
+                    <button class="btn btn-surprise glow-btn" onclick="triggerSurprise()">
+                        <span>Click for Surprise</span>
+                        <span class="btn-glow"></span>
+                    </button>
+
+                    <div id="surprise-message" class="surprise-message hidden">
+                        <div class="surprise-text-wrapper">
+                            <p class="surprise-text">✨ You mean the world to me ✨</p>
+                        </div>
+                    </div>
+
+                    <!-- Hearts Container for Explosion -->
+                    <div id="hearts-container" class="hearts-container"></div>
+                </div>
+
+                <div class="page-nav">
+                    <button class="btn btn-secondary" onclick="goToPage(3)">← Back</button>
+                    <button class="btn btn-primary" onclick="goToPage(0)">Start Over</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
