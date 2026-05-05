@@ -6,11 +6,11 @@
    EDITABLE VARIABLES - CUSTOMIZE HERE! 🎨
    ============================================ */
 
-const girlfriendName = "Antigravity";
-const birthdayMessage = "Happy Birthday My Love 💖";
-const youtubeVideoId = "LUgpPmj6nR8";
+const girlfriendName = "Sweetheart";
+const birthdayMessage = "Happy Birthday My Marathi Mulgi 💖";
+const youtubeVideoId = "https://youtu.be/LUgpPmj6nR8?si=WacBL0tIQ_SNx1Mv";
 
-const loveLetter = `My love, every moment with you feels like a beautiful dream I never want to wake up from. You are my peace in chaos, my smile in sadness, and my strength when I feel weak. No matter where life takes us, always remember one thing — I am always with you, in every heartbeat, every breath, every moment. You are my forever and always. Happy Birthday, my love 💕.`;
+const loveLetter = `My love, every moment with you feels like a beautiful dream I never want to wake up from. You are my peace in chaos, my smile in sadness, and my strength when I feel weak. No matter where life takes us, always remember one thing — I am always with you, in every heartbeat, every breath, every moment. You are my forever and always. Happy Birthday, Cutieeeee!! 💕.`;
 
 /* ============================================
    PAGE MANAGEMENT
